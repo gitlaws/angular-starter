@@ -1,11 +1,10 @@
 <div class="card-container">
   <div class="header">
-    <i *ngIf="iconClasses" [class]="iconClasses">
-      <div class="title">
-        <h5>{{ title }}</h5>
-        <h6>{{ subTitle }}</h6>
-      </div>
-    </i>
+    <i *ngIf="iconClasses" [class]="iconClasses"></i>
+    <div class="title">
+      <h5>{{ title }}</h5>
+      <h6>{{ subTitle }}</h6>
+    </div>
   </div>
   <div class="body">
     <ng-content select="[body]"></ng-content>
