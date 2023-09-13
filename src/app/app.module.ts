@@ -5,18 +5,19 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { RouterModule } from '@angular/router';
+import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     CardComponent,
-    AccordionComponent
+    AccordionComponent,
+    ComponentDocumentationComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
