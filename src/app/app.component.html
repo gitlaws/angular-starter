@@ -1,4 +1,4 @@
-<app-toolbar [title]="'Logo'">
+<app-toolbar [title]="'Toolbar'">
   <ul>
     <li>Components</li>
     <li>Directives</li>
@@ -14,7 +14,7 @@
     [title]="'Accordion'"
     [subTitle]="'Component'"
   >
-  <app-accordion></app-accordion>
+  <app-accordion body [items]="accordionItems"></app-accordion>
   </app-card>
 </main>
 
