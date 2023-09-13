@@ -6,6 +6,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { RouterModule } from '@angular/router';
+import { APP_ROUTES } from './app.routes';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 
 @NgModule({
@@ -16,7 +17,7 @@ import { ComponentDocumentationComponent } from './components/component-document
     AccordionComponent,
     ComponentDocumentationComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],
   bootstrap: [AppComponent],
 })
